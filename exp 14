@@ -1,0 +1,14 @@
+Write a Python program that prompts the user to input three digits (0-9) and checks if the entered digits are valid. If the digits are valid, the program generates all possible combinations of these three digits and prints them. Each combination is formed by arranging the digits in different orders. If the input is not valid (digits are not between 0 and 9), the program should display as "Invalid".
+from itertools import permutations 
+n1 = int(input("digit1 (0-9): "))
+n2 = int(input("digit2 (0-9): "))
+n3 = int(input("digit3 (0-9): "))
+
+if 0 <= n1 <= 9 and 0 <= n2 <= 9 and 0 <= n3 <= 9:
+	digits = [n1, n2, n3]
+	combinations = permutations(digits)
+	for combo in combinations:
+		print("".join(map(str, combo)))
+
+else:
+	print("Invalid")
