@@ -1,0 +1,6 @@
+#Write a Python program to find the reverse of a string.
+def rs(i_s):
+	return i_s[::-1]
+i_s=input()
+rs=rs(i_s)
+print(rs)
