@@ -1,4 +1,4 @@
-//Write a program to calculate the area of a circle and print the result as shown in the displayed test cases.
+#Write a program to calculate the area of a circle and print the result as shown in the displayed test cases.
 a = float(input('Enter the radius : '))
 area = 3.14*a*a
 if 0.0 <= a <= 100.0:
