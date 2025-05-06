@@ -1,0 +1,9 @@
+#Write a Python program that takes a sentence as input, removes punctuations from the sentence, and displays the modified sentence.
+import string
+def rp(sentence):
+	translator = str.maketrans('','',string.punctuation)
+	return sentence.translate(translator)
+
+input_sentence = input()
+ms=rp(input_sentence)
+print(ms)
