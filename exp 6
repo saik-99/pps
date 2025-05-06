@@ -1,0 +1,6 @@
+#Write a Python program to find the largest of three numbers.
+
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number: "))
+c = float(input("Enter the third number: "))
+print(f"Largest number: {a}") if a > b and a > c else print(f"Largest number: {b}") if b > a and b > c else print(f"Largest number: {c}")
