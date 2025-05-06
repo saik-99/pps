@@ -1,0 +1,6 @@
+#Write a program to print the sum of digits of a number.
+def sod(n):
+	total = sum(int(digit) for digit in str(n))
+	print("sum:",total)
+n = int(input("num: ").strip())
+sod(n)
