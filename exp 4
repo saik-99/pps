@@ -1,0 +1,6 @@
+#Write a Python program to print the area of a triangle.
+
+a = float(input('Base: '))
+b = float(input('Height: '))
+c = 1/2 * a * b
+print(f"Area: {c:.2f}")
